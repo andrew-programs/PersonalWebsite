@@ -219,7 +219,7 @@ html {
   }
   
   .text-wrapper {
-    width: 60%;
+    width: 90%;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -231,8 +231,11 @@ html {
     font-family: monospace;
     display: block;
     float: left;
-    font-size: 15px;
-    padding: 14px;
+    font-size: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 6px;
+    padding-right: 6px;
     margin: 5px;
     
     
@@ -289,8 +292,8 @@ html {
   
   .sticky-active {
     position: fixed;
-    width: 50%;
-    left: 25%;
+    width: 80%;
+    left: 10%;
     top: 10px;
     border-radius: 14px;
     box-shadow: 3px 3px 10px gray;
