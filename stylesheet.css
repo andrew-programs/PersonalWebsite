@@ -36,9 +36,11 @@ html {
     font-size: 15px;
     padding: 14px;
     margin: 5px;
-    
-    
     text-decoration: none;
+  }
+
+  .navigation-buttons-wrapper {
+    margin-left: 15px;
   }
   
   .navigation-buttons:hover {
@@ -100,6 +102,40 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+  }
+
+  .social-media-wrapper {
+    display: block;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+  }
+  
+  .social-icon {
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .social-icon:hover {
+    cursor: pointer;
+  }
+
+  #twitter-button {
+    height: 38px;
+    width: 38px;
+  }
+
+  #instagram-button {
+    height: 38px;
+    width: 38px;
   }
 }
 
@@ -200,6 +236,14 @@ html {
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
   }
+
+  .social-media-wrapper {
+    display: none;
+  }
+  
+  .social-icon {
+    display: none;
+  }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 400px) and (max-device-width: 599px) {
@@ -224,7 +268,7 @@ html {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   .navigation-buttons {
     background-color: transparent;
     color: white;
@@ -234,8 +278,8 @@ html {
     font-size: 12px;
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
     margin: 5px;
     
     
@@ -302,6 +346,13 @@ html {
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
   }
+  .social-media-wrapper {
+    display: none;
+  }
+  
+  .social-icon {
+    display: none;
+  }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1px) and (max-device-width: 399px) {
   body {
@@ -309,18 +360,18 @@ html {
   }
 
   .paragraph-header {
-    font-size: 30px;
+    font-size: 20px;
     font-family: monospace;
   }
   
   .paragraph {
-    font-size: 20px;
+    font-size: 14px;
     font-family: monospace;
     text-indent: 40px;
   }
   
   .text-wrapper {
-    width: 60%;
+    width: 90%;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -332,11 +383,12 @@ html {
     font-family: monospace;
     display: block;
     float: left;
-    font-size: 15px;
-    padding: 14px;
+    font-size: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
     margin: 5px;
-    
-    
     text-decoration: none;
   }
   
@@ -390,8 +442,8 @@ html {
   
   .sticky-active {
     position: fixed;
-    width: 50%;
-    left: 25%;
+    width: 90%;
+    left: 5%;
     top: 10px;
     border-radius: 14px;
     box-shadow: 3px 3px 10px gray;
@@ -399,5 +451,13 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+  }
+
+  .social-media-wrapper {
+    display: none;
+  }
+  
+  .social-icon {
+    display: none;
   }
 }
