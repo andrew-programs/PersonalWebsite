@@ -113,8 +113,8 @@ html {
   }
   
   .social-icon {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     margin-left: 5px;
     margin-right: 0px;
     margin-top: 0px;
@@ -122,6 +122,10 @@ html {
     padding: 0px;
     display: inline-block;
     vertical-align: middle;
+    font-size: 0px;
+    color: transparent;
+    background-color: transparent;
+    text-decoration: none;
   }
   
   .social-icon:hover {
@@ -129,13 +133,13 @@ html {
   }
 
   #twitter-button {
-    height: 38px;
-    width: 38px;
+    height: 33px;
+    width: 33px;
   }
 
   #instagram-button {
-    height: 38px;
-    width: 38px;
+    height: 33px;
+    width: 33px;
   }
 }
 
