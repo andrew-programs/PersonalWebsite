@@ -4,14 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
     <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="./js/editor.js"></script>
   </head>
   <header>
     <div class="navigation-bar" id="navbar">
       <div class="navigation-buttons-wrapper">
-        <a class="navigation-buttons" id="home-button" href="#home">Home</a>
-        <a class="navigation-buttons" id="demos-button" href="#home">Demos</a>
-        <a class="navigation-buttons" id="lab-button" href="#home">The Lab</a>
-        <a class="navigation-buttons" id="contact-button" href="#home">Contact Me</a>
+        <a class="navigation-buttons" id="home-button" href="index.html">Home</a>
+        <a class="navigation-buttons" id="demos-button" href="demos.html">Demos</a>
+        <a class="navigation-buttons" id="lab-button" href="the_lab.html">The Lab</a>
+        <a class="navigation-buttons" id="contact-button" href="contact_me.html">Contact Me</a>
       </div>
       <div class="social-media-wrapper">
         <a href="https://twitter.com/ctrlv_andrew" target="_blank"><img class="social-icon" id="twitter-button" src="./images/logos/twitter-icons8.svg"></a>
@@ -20,4 +21,25 @@
       </div>
     </div>
   </header>
+  <body>
+    <div class="outer-editor-wrapper">
+      <div class="inner-editor-wrapper">
+        <div>
+          <textarea class="code-input" id="html-editor" placeholder="HTML Editor"></textarea>
+        </div>
+        <textarea class="code-input" id="css-editor" placeholder="CSS Editor"></textarea>
+        <textarea class="code-input" id="js-editor" placeholder="JavaScript Editor"></textarea>
+      </div>
+    </div>
+    <div id="advanced-output">
+      <style id="style-output">
+
+      </style>
+      <script id="script-output">
+
+      </script>
+    </div>
+    <div id="code-output">
+    </div>
+  </body>
 </html>
