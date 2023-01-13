@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const htmlEditor = document.getElementById('html-editor');
-  const styleEditor = document.getElementById('css-editor');
-  const scriptEditor = document.getElementById('js-editor');
-  const output = document.getElementById('code-output');
-  const style = document.getElementById('style-output');
-  const script = document.getElementById('script-output');
+  const htmlEditor = document.querySelector('#html-editor');
+  const styleEditor = document.querySelector('#css-editor');
+  const scriptEditor = document.querySelector('#js-editor');
+  const output = document.querySelector('#html-output');
+  const style = document.querySelector('#css-output');
+  const script = document.querySelector('#js-output');
 
   htmlEditor.addEventListener('keydown', (e) => {
     output.innerHTML = htmlEditor.value;
 
-    if (e.key == "Tab") {
+    if (e.key === 'Tab') {
       e.preventDefault();
-
     };
   });
 
@@ -22,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   styleEditor.addEventListener('keydown', (e) => {
     style.innerHTML = styleEditor.value;
 
-    if (e.key == "Tab") {
+    if (e.key === 'Tab') {
       e.preventDefault();
 
     };
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scriptEditor.addEventListener('keydown', (e) => {
     script.innerHTML = scriptEditor.value.replace(/\n/g, "");
 
-    if (e.key == "Tab") {
+    if (e.key === 'Tab') {
       e.preventDefault();
 
     };

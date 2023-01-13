@@ -5,6 +5,9 @@ html {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1000px) {
+
+  /* Main styles for use on every page (device-width > 1000px) */
+  
   body {
     padding-top: 80px;
   }
@@ -26,6 +29,8 @@ html {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  /* Navigation bar styles (device-width > 1000px) */
   
   .navigation-buttons {
     background-color: transparent;
@@ -142,19 +147,36 @@ html {
     width: 33px;
   }
 
-  .code-input {
-    font-size: 14px;
-    overflow: auto;
-    resize: none;
-    border-radius: 5px;
-    background-color: rgb(57, 57, 57);
-    color: yellow;
+  /* The Lab specific styles (device-width > 1000px) */
+
+  .editor {
+    display: inline-block;
     height: 300px;
     width: 30%;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(57, 57, 57);
+    color: lightgray;
+    font-family: monospace;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    overflow: auto;
+    resize: none;
+    outline: none;
+    min-width: none;
   }
-  
-  .inner-editor-wrapper {
+
+  .input {
     text-align: center;
+    width: auto;
+  }
+
+  .lab-wrapper {
+    margin: 0px;
+    padding: 0px;
   }
 }
 
