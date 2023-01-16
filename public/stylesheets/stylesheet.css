@@ -1,11 +1,4 @@
-html {
-  background-image: url("./images/background-images/dot-grid.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
-
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1000px) {
-
   /* Main styles for use on every page (device-width > 1000px) */
   
   body {
@@ -20,7 +13,6 @@ html {
   .paragraph {
     font-size: 20px;
     font-family: monospace;
-    text-indent: 40px;
   }
   
   .text-wrapper {
@@ -39,13 +31,16 @@ html {
     display: block;
     float: left;
     font-size: 15px;
-    padding: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     margin: 5px;
     text-decoration: none;
   }
 
   .navigation-buttons-wrapper {
-    margin-left: 15px;
+    margin-left: 25px;
   }
   
   .navigation-buttons:hover {
@@ -55,7 +50,7 @@ html {
   .navigation-bar {
     overflow: hidden;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(64, 64, 64);
     position: fixed;
     top: 0px;
     left: 0px;
@@ -104,7 +99,7 @@ html {
     border-radius: 14px;
     box-shadow: 3px 3px 10px gray;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(64, 64, 64, 0.8);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
   }
@@ -145,6 +140,74 @@ html {
   #instagram-button {
     height: 33px;
     width: 33px;
+  }
+
+  /* Home specific styles (device-width > 100px) */
+  
+  #demo-paragraph, #demo-button-wrapper {
+    width: 76%;
+    display: block;
+    float: left;
+  }
+
+  #index-sections {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 30%;
+  }
+
+  .index-paragraph {
+    font-size: 20px;
+    font-family: monospace;
+  }
+
+  #demo-preview-img {
+    width: 20%;
+    display: block;
+    float: right;
+    border-radius: 10px;
+  }
+
+  #the-lab-paragraph, #the-lab-button {
+    width: 76%;
+    display: block;
+    float: right;
+  }
+
+  #the-lab-preview-img {
+    width: 20%;
+    display: block;
+    float: left;
+    border-radius: 10px;
+  }
+
+
+  .redirect-button {
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+    display: block;
+    font-family: monospace;
+    color: white;
+    border: black solid 3px;
+    background-color: black;
+    border-radius: 10px;
+    transition: background-color linear 0.08s,
+    color linear 0.08s;
+  }
+
+  .redirect-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+
+  #demos-redirect {
+    float: right;
+  }
+
+  #the-lab-redirect {
+    float: left;
   }
 
   /* The Lab specific styles (device-width > 1000px) */
